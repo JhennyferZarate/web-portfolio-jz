@@ -1,9 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+/* Karma Regular */
+
+@layer base {
+  @font-face {
+    font-family: "Karma";
+    src: url("../src/public/fonts/Karma-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Karma";
+    src: url("../src/public/fonts/Karma-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: bold;
+  }
+
+  /* Karma Light */
+  @font-face {
+    font-family: "Karma";
+    src: url("../src/public/fonts/Karma-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: light;
+  }
+
+  /* Karma Medium */
+  @font-face {
+    font-family: "Karma";
+    src: url(".../src/public/fonts/Karma-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: medium;
+  }
+
+  /* Karma SemiBold */
+  @font-face {
+    font-family: "Karma";
+    src: url("../src/public/fonts/Karma-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: semibold;
+  }
+}
+
+/* Karma Bold */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-  font-family: "Karma", sans-serif;
+  font-family: "Karma";
 }

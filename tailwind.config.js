@@ -1,4 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+import { defaultTheme } from "tailwindcss/defaultTheme";
+import { fontFamily } from "tailwindcss/defaultTheme";
+
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
@@ -9,6 +11,10 @@ export default {
         gunmetal: "#3F3D73",
         steelBlue: "#5671A6",
         midnightBlue: "#131722",
+      },
+      fontFamily: {
+        ...fontFamily,
+        karma: ["'Karma', sans-serif"],
       },
     },
   },

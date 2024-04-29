@@ -1,11 +1,11 @@
 <template>
-  <div class="section bg-transparent py-2">
+  <div class="section bg-transparent pt-8">
     <div class="flex justify-between items-center">
       <div class="mr-4">
         <span class="text-2xl text-midnightBlue font-bold"
           >HELLO, MY NAME IS</span
         >
-        <h1 class="text-7xl pt-8 text-midnightBlue font-bold">
+        <h1 class="text-7xl pt-8 text-midnightBlue font-karma font-bold">
           Jhennyfer Zárate
         </h1>
         <h2 class="text-4xl pt-2 text-gunmetal font-bold">
@@ -20,28 +20,51 @@
           and project management, easy scalability and excellent user
           experience.
         </p>
-        <div>
-          <!--Icons-->
-        </div>
-        <div class="pt-8">
-          <button
-            class="border-4 border-cornflowerBlue bg-cornflowerBlue text-white shadow-md text-xl font-bold py-3 px-8 rounded-lg inline-block mr-4 hover:shadow-xl transition duration-300"
+        <div class="flex mt-5 mb-16">
+          <a
+            href="https://github.com/JhennyferZarate"
+            target="_blank"
+            class="mr-3"
           >
-            DOWNLOAD CV
-          </button>
-
-          <button
-            class="border-4 border-cornflowerBlue bg-white text-cornflowerBlue text-xl font-bold py-3 px-8 rounded-lg inline-block shadow-md hover:shadow-xl transition duration-300"
+            <img src="../assets/github.svg" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jhennyferzarate/"
+            target="_blank"
+            class="mr-3"
           >
-            CONTACT ME
-          </button>
+            <img src="../assets/linkedln.svg" />
+          </a>
         </div>
+        <button
+          class="border-4 border-cornflowerBlue bg-cornflowerBlue text-white shadow-lg text-xl font-bold pt-4 pb-3 pr-5 pl-6 rounded-lg inline-flex items-center mr-4 hover:shadow-2xl transition duration-300"
+        >
+          DOWNLOAD CV
+          <span
+            class="material-symbols-outlined text-white text-[30px] ml-2 mb-[6px]"
+          >
+            download
+          </span>
+        </button>
+        <button
+          class="border-4 border-cornflowerBlue bg-white text-cornflowerBlue text-xl font-bold pt-4 pb-3 pr-5 pl-6 rounded-lg inline-flex items-center mr-4 shadow-lg hover:shadow-2xl transition duration-300"
+        >
+          CONTACT ME
+          <span
+            class="material-symbols-outlined text-cornflowerBlue text-[30px] ml-2 mb-[7px]"
+            >sentiment_very_satisfied</span
+          >
+        </button>
       </div>
-      <img src="../assets/me.png" class="w-full mt-[-180px] w-auto h-auto" />
+      <img
+        src="../assets/me.png"
+        alt="photo"
+        class="w-full mt-[-200px] w-auto h-auto"
+      />
     </div>
   </div>
-  <div class="justify-center flex">
-    <div class="flex pt-10">
+  <div class="justify-center flex mt-14">
+    <div class="flex">
       <span class="text-6xl font-bold text-gunmetal pr-3">+2</span>
       <div>
         <span class="text-3xl font-bold">years experience</span>
