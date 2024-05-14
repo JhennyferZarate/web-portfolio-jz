@@ -1,5 +1,3 @@
-/* Karma Regular */
-
 @layer base {
   @font-face {
     font-family: "Karma";
@@ -7,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
   }
+
   @font-face {
     font-family: "Karma";
     src: url("../src/public/fonts/Karma-Bold.ttf") format("truetype");
@@ -14,7 +13,6 @@
     font-style: bold;
   }
 
-  /* Karma Light */
   @font-face {
     font-family: "Karma";
     src: url("../src/public/fonts/Karma-Light.ttf") format("truetype");
@@ -22,15 +20,13 @@
     font-style: light;
   }
 
-  /* Karma Medium */
   @font-face {
     font-family: "Karma";
-    src: url(".../src/public/fonts/Karma-Medium.ttf") format("truetype");
+    src: url("../src/public/fonts/Karma-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: medium;
   }
 
-  /* Karma SemiBold */
   @font-face {
     font-family: "Karma";
     src: url("../src/public/fonts/Karma-SemiBold.ttf") format("truetype");
@@ -39,12 +35,10 @@
   }
 }
 
-/* Karma Bold */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-  font-family: "Karma";
+  font-family: "Karma", sans-serif;
 }

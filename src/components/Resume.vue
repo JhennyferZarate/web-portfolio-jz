@@ -1,8 +1,8 @@
 import CommonEnglish from '../languages/en/index';
 <template>
-  <div class="section mt-16 pt-20 pb-20 h-auto bg-periwinkle">
-    <h1 class="text-4xl font-bold text-white text-center">Resume</h1>
-    <h2 class="text-3xl font-medium text-white text-center">
+  <div class="section mt-16 pt-16 pb-20 h-auto bg-periwinkle">
+    <h1 class="text-4xl font-bold text-white text-center font-karma">Resume</h1>
+    <h2 class="text-3xl font-medium text-white text-center font-karma">
       - My <span class="text-gunmetal">Experience</span> -
     </h2>
     <div class="mt-10 flex justify-center items-center">

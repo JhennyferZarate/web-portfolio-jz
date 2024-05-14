@@ -1,4 +1,3 @@
-import { defaultTheme } from "tailwindcss/defaultTheme";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
 export default {

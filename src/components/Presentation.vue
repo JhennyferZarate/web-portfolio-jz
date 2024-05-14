@@ -57,7 +57,7 @@
         </button>
       </div>
       <img
-        src="../assets/me.png"
+        src="../assets/img/presentation/me.png"
         alt="photo"
         class="w-full mt-[-200px] w-auto h-auto"
       />
