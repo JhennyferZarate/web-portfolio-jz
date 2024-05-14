@@ -26,14 +26,14 @@
             target="_blank"
             class="mr-3"
           >
-            <img src="../assets/github.svg" />
+            <img src="../assets/svg/social/github.svg" alt="github" />
           </a>
           <a
             href="https://www.linkedin.com/in/jhennyferzarate/"
             target="_blank"
             class="mr-3"
           >
-            <img src="../assets/linkedln.svg" />
+            <img src="../assets/svg/social/linkedln.svg" alt="linkedln" />
           </a>
         </div>
         <button
@@ -58,14 +58,14 @@
       </div>
       <img
         src="../assets/img/presentation/me.png"
-        alt="photo"
-        class="w-full mt-[-200px] w-auto h-auto"
+        alt="personal"
+        class="w-auto mt-[-200px] h-auto"
       />
     </div>
   </div>
   <div class="justify-center flex mt-14">
     <div class="flex">
-      <span class="text-6xl font-bold text-gunmetal pr-3">+2</span>
+      <span class="text-6xl font-bold text-gunmetal pr-3">+{{ years }}</span>
       <div>
         <span class="text-3xl font-bold">years experience</span>
         <svg class="w-[245px] h-[5px]">
@@ -77,7 +77,20 @@
 </template>
 
 <script lang="ts">
-export default {};
+const startDate = new Date("2021-05-01");
+const today = new Date();
+const differenceInMilliseconds = today.getTime() - startDate.getTime();
+const differenceInYears =
+  differenceInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+const years = Math.floor(differenceInYears);
+
+export default {
+  data() {
+    return {
+      years,
+    };
+  },
+};
 </script>
 
 <style scoped>

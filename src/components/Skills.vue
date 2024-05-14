@@ -36,7 +36,7 @@
             <li
               v-for="(skill, index) in section.skills"
               :key="skill.name"
-              :class="{ 'mr-6': index != sections.length }"
+              :class="{ 'mr-6': index != section.skills.length - 1 }"
             >
               <div
                 :class="[
@@ -74,17 +74,7 @@
 
 <script lang="ts">
 import { skills } from "../data/skills";
-
-interface Skill {
-  name: string;
-  image: string;
-  width: string;
-}
-
-interface Section {
-  name: string;
-  skills: Skill[];
-}
+import { Section } from "../interfaces/skills";
 
 export default {
   data() {

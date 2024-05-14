@@ -9,7 +9,7 @@
     :style="dynamicPadding"
   >
     <div class="flex items-center cursor-pointer">
-      <img src="../assets/logo.png" />
+      <img src="../assets/img/logo.png" alt="logo" />
     </div>
     <ul class="md:flex md:items-center">
       <li class="md:mx-4" v-for="option in options" :key="option.name">
