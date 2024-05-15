@@ -1,6 +1,6 @@
 <template>
-  <div class="section flex max-w-[1400px] mx-auto mt-8 justify-between">
-    <div class="w-auto h-[720px] bg-black rounded-[40px]">
+  <div class="flex max-w-[1400px] mx-auto mt-8 justify-between">
+    <div class="w-auto h-[720px] rounded-[40px]">
       <img
         src="../assets/img/presentation/me.png"
         alt="personal"

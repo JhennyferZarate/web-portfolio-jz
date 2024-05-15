@@ -1,21 +1,16 @@
 <template>
-  <div class="section bg-transparent pt-16 pb-20">
-    <h1 class="text-4xl font-bold text-gunmetal text-center font-karma">
-      Tech Skills
-    </h1>
-    <h2 class="text-3xl font-medium text-gunmetal text-center font-karma">
-      - My <span class="text-cornflowerBlue">Talent</span> -
-    </h2>
-    <div class="justify-center items-center">
-      <ol class="flex flex-wrap justify-center list-none mt-6 mb-4">
+  <div class="flex max-w-[1400px] mx-auto mt-8 justify-between">
+    <div class="info w-[1200px] h-auto rounded-[40px] p-16 mr-8">
+      <h1 class="text-4xl font-bold text-white font-karma">Tech Skills</h1>
+      <ol class="flex flex-wrap justify-center list-none mt-4 mb-4">
         <li
           v-for="(section, index) in sections"
           :key="section.name"
           :class="{
-            'mr-12': index !== sections.length - 1,
-            'text-white bg-gunmetal pt-1.5 pb-1 pl-3 pr-3 rounded-md':
+            'mr-2': index !== sections.length - 1,
+            'text-white bg-[#191A2F] pt-2 pb-1.5 pl-4 pr-4 rounded-[20px]':
               showingSkills === section.name,
-            'text-gunmetal pt-1.5 pb-1 pl-3 pr-3 rounded-md shadow-sm':
+            'text-white pt-1.5 pb-1 pl-3 pr-3 rounded-md shadow-sm':
               showingSkills !== section.name,
           }"
         >
@@ -39,35 +34,26 @@
               :class="{ 'mr-6': index != section.skills.length - 1 }"
             >
               <div
-                :class="[
-                  'bg-steelBlue',
-                  'w-[120px]',
-                  'h-[150px]',
-                  'rounded-md',
-                  'flex',
-                  'flex-col',
-                  'justify-center',
-                  'items-center',
-                ]"
+                class="bg-white w-[90px] h-[90px] flex justify-center items-center rounded-[20px] mt-1"
               >
-                <div
-                  class="bg-white w-[90px] h-[90px] flex justify-center items-center rounded-md mt-1"
-                >
-                  <img
-                    :src="'/src/assets/img/skills/' + skill.image"
-                    :alt="skill.name"
-                    :width="skill.width"
-                    class="align-center"
-                  />
-                </div>
-                <p class="text-center text-white font-normal mt-3">
-                  {{ skill.name }}
-                </p>
+                <img
+                  :src="'/src/assets/img/skills/' + skill.image"
+                  :alt="skill.name"
+                  :width="skill.width"
+                  class="align-center"
+                />
               </div>
             </li>
           </ul>
         </li>
       </ol>
+    </div>
+    <div class="w-[25%] h-auto rounded-[40px]">
+      <img
+        src="../assets/img/presentation/random.jpg"
+        alt="personal"
+        class="w-full h-full object-cover rounded-[40px]"
+      />
     </div>
   </div>
 </template>
@@ -92,8 +78,7 @@ export default {
 </script>
 
 <style scoped>
-.section {
-  padding-left: 250px;
-  padding-right: 250px;
+.info {
+  background-image: linear-gradient(to bottom left, #292c50, #122652);
 }
 </style>
