@@ -1,23 +1,22 @@
 <template>
   <div
-    id="navbar"
-    class="navbar bg-transparent py-2 flex justify-between items-center"
-    :class="{
-      'navbar-scrolled': isScrolled,
-      //'navbar-small': screenWidth < 1300,
-    }"
-    :style="dynamicPadding"
+    class="bg-transparent max-w-[1400px] mx-auto py-4 flex justify-between items-center"
   >
     <div class="flex items-center cursor-pointer">
       <img src="../assets/img/logo.png" alt="logo" />
     </div>
     <ul class="md:flex md:items-center">
-      <li class="md:mx-4" v-for="option in options" :key="option.name">
+      <li
+        v-for="(option, index) in options"
+        :key="option.name"
+        :class="['md:mx-4', index < options.length - 1 ? '' : 'md:mr-0']"
+      >
         <a
           :href="option.link"
-          class="text-xl text-midnightBlue font-regular hover:text-gunmetal hover:underline hover:underline-steelBlue hover:underline-dashed hover:underline-h-8"
-          >{{ option.name }}</a
+          class="text-xl text-white font-regular hover:font-semibold"
         >
+          {{ option.name }}
+        </a>
       </li>
     </ul>
   </div>
@@ -32,10 +31,9 @@ export default {
 
     const options = [
       { name: "About me", link: "#" },
-      { name: "Resume", link: "#" },
       { name: "Tech Skills", link: "#" },
-      { name: "Portfolio", link: "#" },
-      { name: "What I do", link: "#" },
+      { name: "Projects", link: "#" },
+      { name: "Contact", link: "#" },
     ];
 
     const handleScroll = () => {
@@ -64,7 +62,7 @@ export default {
         const padding = (this.screenWidth - 1420) / 2;
         return {
           paddingLeft: `${padding}px`,
-          paddingRight: `${padding + 650}px`,
+          paddingRight: `${padding}px`,
         };
       } else {
         return {
@@ -93,14 +91,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.navbar {
-  transition: background-color 0.3s ease-in-out;
-}
-
-.navbar-scrolled {
-  background-color: white;
-  padding-left: 400px;
-  padding-right: 400px;
-}
-</style>
+<style scoped></style>
