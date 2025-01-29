@@ -2,7 +2,7 @@
   <div :class="{ 'bg-transparent': !isScrolled, 'bg-custom-transparent': isScrolled }"
     class="sticky top-0 bg-transparent max-w-[1400px] mx-auto py-4 flex justify-between items-center"
     :style="dynamicPadding">
-    <div class="flex items-center cursor-pointer" :style="dynamicPadding">
+    <div class="flex items-center cursor-pointer pt-2" :style="dynamicPadding">
       <img src="../assets/img/logo.png" alt="logo" />
     </div>
 
@@ -66,7 +66,7 @@ export default {
 
     const dynamicPadding = computed(() => {
       const minWidth = 350;
-      const maxPadding = 100;
+      const maxPadding = 20;
       const fixedPadding = 20;
 
       let padding;
