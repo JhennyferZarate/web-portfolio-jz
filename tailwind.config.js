@@ -14,6 +14,7 @@ export default {
       fontFamily: {
         ...fontFamily,
         karma: ["'Karma', sans-serif"],
+        kufam: ["'Kufam', sans-serif"],
       },
     },
   },
