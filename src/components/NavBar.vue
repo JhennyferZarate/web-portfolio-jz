@@ -4,7 +4,7 @@
     <div class="flex items-center cursor-pointer pt-2">
       <img src="../assets/img/logo.png" alt="logo" class="pr-6"/>
       <ul class="hidden lg:flex md:items-center">
-        <li v-for="(option, index) in options" :key="option.name" :class="['md:mx-4']">
+        <li v-for="option in options" :key="option.name" :class="['md:mx-4']">
           <a :href="option.link" class="text-xl text-white font-regular">
             {{ option.name }}
           </a>

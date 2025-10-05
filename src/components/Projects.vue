@@ -8,11 +8,8 @@
 </template>
 
 <script lang="ts">
-
+export default {}
 </script>
 
 <style scoped>
-.projects {
-    background-image: linear-gradient(to bottom left, #6a73db, #143375);
-}
 </style>
